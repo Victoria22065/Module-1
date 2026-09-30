@@ -1,0 +1,107 @@
+<video src="mov_bbb.mp4" controls autoplay></video>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .card-box
+        {
+            background-color: pink;
+            padding: 25px;
+            width: 220px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .card-box h3
+        {
+            color: gray;
+            margin-top: 0;
+        }
+
+        .icon-box
+        {
+            width: 60px;
+            height: 60px;
+            background-color: rgb(106, 169, 224);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        @keyframes Jude
+        {
+            from 
+            {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to
+            {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .anim-fade-in
+        {
+            animation: Jude 2s infinite;
+        }
+
+        @keyframes Jobe{
+            0%
+            {
+                transform: scale(1);
+            }
+            50%
+            {
+                transform: scale(1.5);
+            }
+            100%
+            {
+                transform: scale(1);
+            }
+        }
+
+        .heart-beat
+            {
+                animation: Jobe 1.2s infinite;
+            }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card-box">
+            <h3>Fade</h3>
+            <div class="icon-box anim-fade-in">Fade</div>
+        </div>
+
+        <div class="card-box">
+            <h3>Pulse</h3>
+            <div class="icon-box heart-beat">Puls</div>
+        </div>
+
+
+    </div>
+
+</body>
+
+
+</html>
